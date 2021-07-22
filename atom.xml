@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-07-22T07:14:26.643Z</updated>
+  <updated>2021-07-22T08:09:52.046Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>寻找完数</title>
+    <link href="http://example.com/2021/07/20/%E5%AF%BB%E6%89%BE%E5%AE%8C%E6%95%B0/"/>
+    <id>http://example.com/2021/07/20/%E5%AF%BB%E6%89%BE%E5%AE%8C%E6%95%B0/</id>
+    <published>2021-07-20T05:21:37.000Z</published>
+    <updated>2021-07-22T08:09:52.046Z</updated>
+    
+    <content type="html"><![CDATA[<p> 完数：如果一个数的所有因子之和等于 这个数，则该数称之为“完数”</p><p>关于如何寻找完数，这里我将提供我的寻找完数的思路：</p><p>将需要的被除数 从2（别问这里为什么要从2开始，因为1不是完数~）开始循环除以以1开始循环的除数，将被除数 赋值赋给s，用s减去除数，循环；直到s=0时,这时赋值的被除数， 便是我们要找的完数</p><p>C语言代码如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line"> <span class="keyword">static</span> <span class="keyword">int</span> k[<span class="number">10</span>];</span><br><span class="line"> <span class="keyword">int</span> i,j,n,s;</span><br><span class="line"> <span class="keyword">for</span>(j=<span class="number">2</span>;j&lt;<span class="number">1000</span>;j++)</span><br><span class="line">  &#123;</span><br><span class="line">   n=<span class="number">-1</span>;</span><br><span class="line">   s=j;</span><br><span class="line">   <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;j;i++)</span><br><span class="line">  &#123;<span class="keyword">if</span>((j%i)==<span class="number">0</span>)</span><br><span class="line">   &#123;  n++;</span><br><span class="line">      s=s-i;</span><br><span class="line">      k[n]=i;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">if</span>(s==<span class="number">0</span>)</span><br><span class="line">  &#123;<span class="built_in">printf</span>(<span class="string">&quot;%d 是完数:  &quot;</span>,j);</span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d,&quot;</span>,k[i]);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,k[n]);</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; 完数：如果一个数的所有因子之和等于 这个数，则该数称之为“完数”&lt;/p&gt;
+&lt;p&gt;关于如何寻找完数，这里我将提供我的寻找完数的思路：&lt;/p&gt;
+&lt;p&gt;将需要的被除数 从2（别问这里为什么要从2开始，因为1不是完数~）开始循环除以以1开始循环的除数，将被除数 赋值赋给s，用s减</summary>
+      
+    
+    
+    
+    
+    <category term="寻找完数" scheme="http://example.com/tags/%E5%AF%BB%E6%89%BE%E5%AE%8C%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>对《时间简史》的感悟</title>
