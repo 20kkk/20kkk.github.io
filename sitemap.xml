@@ -39,7 +39,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E5%AD%A6%E4%B9%A0Markdown%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/</loc>
+    <loc>http://example.com/tags/%E8%B4%AA%E5%A9%AA%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2021-07-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -53,7 +53,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E8%B4%AA%E5%A9%AA%E7%AE%97%E6%B3%95/</loc>
+    <loc>http://example.com/tags/%E5%AD%A6%E4%B9%A0Markdown%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/</loc>
     <lastmod>2021-07-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
