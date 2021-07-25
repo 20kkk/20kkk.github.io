@@ -124,30 +124,29 @@
     
     
     <h2 class="post-title">
-        Hello World
+        贪婪算法的实际应用
     </h2>
     <ul class="post-date">
         <li>
-            2021-07-08
+            2021-07-20
         </li>
         <li>
             John Doe
         </li>
     </ul>
     <div class="post-content">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="什么是贪婪算法："><a href="#什么是贪婪算法：" class="headerlink" title="什么是贪婪算法："></a>什么是贪婪算法：</h2><p>贪婪算法 是一种对某些求最优解问题的更简单、更迅速的设计技术。用贪婪算法的特殊是一步一步 的进行，从每一步的最优解 （也可 以不是最优解，我感觉有点像 数学建模的最优路线 ）从而找到最优的路线 ，贪婪算法主要是将问题化成一个规模更小的子问题，最终可以得到 问题的一个整体最优解。</p>
+<h2 id="贪婪算法的一般解题步骤："><a href="#贪婪算法的一般解题步骤：" class="headerlink" title="贪婪算法的一般解题步骤："></a>贪婪算法的一般解题步骤：</h2><p>1.明确问题的求解目标</p>
+<p>2.分析问题所包含的约束条件</p>
+<p>3.建立优化函数。优化函数通过综合分析问题的求解目标及约束条件归纳 出来，最后找到其最优解。</p>
+<p>题目：</p>
+<blockquote>
+<p>在N行M列的正整数矩阵中，要求从每行中选出1个数，使得选出的总共N个数的和最大。（1&lt;=N, M&lt;=100，结果在int范围内）</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span>   </span></span><br><span class="line"><span class="keyword">int</span> N,M;  </span><br><span class="line"><span class="keyword">int</span> Hmax;   <span class="comment">//记录每行中的最大值  </span></span><br><span class="line"><span class="keyword">int</span> sum=<span class="number">0</span>;    <span class="comment">//sum记录每行中的最大值之和   </span></span><br><span class="line"><span class="keyword">int</span> a[<span class="number">150</span>][<span class="number">150</span>];<span class="comment">//定义矩阵</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> i,j;  </span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>,&amp;N,&amp;M);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;N;i++)  </span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;M;j++)  </span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;a[i][j]);  </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;N;i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">        Hmax=<span class="number">0</span>;      </span><br><span class="line">        <span class="keyword">for</span>(j=<span class="number">0</span>;j&lt;M;j++)   <span class="comment">//循环更新每行的最大值   </span></span><br><span class="line">        &#123;  </span><br><span class="line">            <span class="keyword">if</span>(a[i][j]&gt;Hmax)  </span><br><span class="line">                Hmax=a[i][j];  </span><br><span class="line">        &#125;  </span><br><span class="line">        sum=sum+Hmax;   </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,sum);  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>通过这个算法可以从局部 到整体，找到局部的最优解在找到整体的</p>
+<p>最优解 。</p>
 
     </div>
 </article>
