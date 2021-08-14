@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-07-25T11:00:59.063Z</updated>
+  <updated>2021-08-12T18:08:35.950Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2021/08/13/%E5%A5%96%E5%88%B8%E7%AE%97%E6%B3%95/"/>
+    <id>http://example.com/2021/08/13/%E5%A5%96%E5%88%B8%E7%AE%97%E6%B3%95/</id>
+    <published>2021-08-12T18:05:24.057Z</published>
+    <updated>2021-08-12T18:08:35.950Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="奖券算法"><a href="#奖券算法" class="headerlink" title="奖券算法"></a>奖券算法</h1><p>游戏人很迷信数字，</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;奖券算法&quot;&gt;&lt;a href=&quot;#奖券算法&quot; class=&quot;headerlink&quot; title=&quot;奖券算法&quot;&gt;&lt;/a&gt;奖券算法&lt;/h1&gt;&lt;p&gt;游戏人很迷信数字，&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>奖券数目</title>
+    <link href="http://example.com/2021/08/07/%E5%A5%96%E5%88%B8%E6%95%B0%E7%9B%AE/"/>
+    <id>http://example.com/2021/08/07/%E5%A5%96%E5%88%B8%E6%95%B0%E7%9B%AE/</id>
+    <published>2021-08-07T01:56:26.000Z</published>
+    <updated>2021-08-13T11:47:46.578Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="奖券数目问题"><a href="#奖券数目问题" class="headerlink" title="奖券数目问题"></a>奖券数目问题</h1><p>有些人很迷信数字，比如带 “4” 的数字，认为和“死”谐音，就觉得不吉利。虽然这些说法纯属无稽之谈，但有时还要迎合大众的需求。某抽奖活动的奖券号码是 5 位数（10000-99999），要求其中不要出现带 “4” 的号码，主办单位请你计算一下，如果任何两张奖券不重号，最多可发出奖券多少张。</p><blockquote><p>可以通过枚举法求奖券数目，从0，1,2,3,4,5,6,7,8,9这九个数排列，要求大于一万所以首位不能为0；可得首位有8种选择其他四位都有九种选择；</p></blockquote><p>代码如下：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> j;</span><br><span class="line"><span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(j=<span class="number">10000</span>;j&lt;<span class="number">100000</span>;j++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(chack(j))</span><br><span class="line">    cnt++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,cnt);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">chack</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">while</span>(x)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span>(x%<span class="number">10</span>==<span class="number">4</span>)</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">x=x/<span class="number">10</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;奖券数目问题&quot;&gt;&lt;a href=&quot;#奖券数目问题&quot; class=&quot;headerlink&quot; title=&quot;奖券数目问题&quot;&gt;&lt;/a&gt;奖券数目问题&lt;/h1&gt;&lt;p&gt;有些人很迷信数字，比如带 “4” 的数字，认为和“死”谐音，就觉得不吉利。虽然这些说法纯属无稽之谈，但有时还</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>贪婪算法的实际应用</title>
