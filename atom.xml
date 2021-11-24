@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-11-24T12:09:31.644Z</updated>
+  <updated>2021-11-24T12:23:33.122Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,39 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2021/08/20/%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F/"/>
-    <id>http://example.com/2021/08/20/%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F/</id>
-    <published>2021-08-20T07:37:29.442Z</published>
-    <updated>2021-11-24T12:09:31.644Z</updated>
+    <title>局部与成员变量</title>
+    <link href="http://example.com/2021/11/24/%E5%B1%80%E9%83%A8%E4%B8%8E%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F/"/>
+    <id>http://example.com/2021/11/24/%E5%B1%80%E9%83%A8%E4%B8%8E%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F/</id>
+    <published>2021-11-24T12:20:28.000Z</published>
+    <updated>2021-11-24T12:23:33.122Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="成员变量和局部变量"><a href="#成员变量和局部变量" class="headerlink" title="成员变量和局部变量"></a>成员变量和局部变量</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Eval</span></span>&#123;<span class="comment">//定义类，名称一致</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">double</span> PI=<span class="number">3.14</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> age=<span class="number">23</span>;<span class="comment">//定义静态 变量</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;<span class="comment">//定义主方法  </span></span><br><span class="line"><span class="keyword">final</span> <span class="keyword">int</span> number;<span class="comment">//定义常量注意常量只能赋值一次</span></span><br><span class="line">number=<span class="number">12345</span>;</span><br><span class="line">age=<span class="number">22</span>;</span><br><span class="line">System.out.println(+PI);</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">​System.out.println(+number);</span><br><span class="line">​System.out.println(+age);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Frist</span></span>&#123;<span class="comment">//注意大小写！！！！</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> times=<span class="number">3</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> times=<span class="number">4</span>;</span><br><span class="line">System.out.println(+times);</span><br><span class="line">&#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//局部变量会覆盖全局变量</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;成员变量和局部变量&quot;&gt;&lt;a href=&quot;#成员变量和局部变量&quot; class=&quot;headerlink&quot; title=&quot;成员变量和局部变量&quot;&gt;&lt;/a&gt;成员变量和局部变量&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2021/08/13/%E5%A5%96%E5%88%B8%E7%AE%97%E6%B3%95/"/>
-    <id>http://example.com/2021/08/13/%E5%A5%96%E5%88%B8%E7%AE%97%E6%B3%95/</id>
-    <published>2021-08-12T18:05:24.057Z</published>
-    <updated>2021-08-12T18:08:35.950Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="奖券算法"><a href="#奖券算法" class="headerlink" title="奖券算法"></a>奖券算法</h1><p>游戏人很迷信数字，</p>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Eval</span></span>&#123;<span class="comment">//定义类，名称一致</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">double</span> PI=<span class="number">3.14</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> age=<span class="number">23</span>;<span class="comment">//定义静态 变量</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;<span class="comment">//定义主方法  </span></span><br><span class="line"><span class="keyword">final</span> <span class="keyword">int</span> number;<span class="comment">//定义常量注意常量只能赋值一次</span></span><br><span class="line">number=<span class="number">12345</span>;</span><br><span class="line">age=<span class="number">22</span>;</span><br><span class="line">System.out.println(+PI);</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">​System.out.println(+number);</span><br><span class="line">​System.out.println(+age);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Frist</span></span>&#123;<span class="comment">//注意大小写！！！！</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> times=<span class="number">3</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> times=<span class="number">4</span>;</span><br><span class="line">System.out.println(+times);</span><br><span class="line">&#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//局部变量会覆盖全局变量</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;奖券算法&quot;&gt;&lt;a href=&quot;#奖券算法&quot; class=&quot;headerlink&quot; title=&quot;奖券算法&quot;&gt;&lt;/a&gt;奖券算法&lt;/h1&gt;&lt;p&gt;游戏人很迷信数字，&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
       
     
     
@@ -127,9 +106,9 @@
     <link href="http://example.com/2021/07/08/%E5%AD%A6%E4%B9%A0Markdown%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/"/>
     <id>http://example.com/2021/07/08/%E5%AD%A6%E4%B9%A0Markdown%E7%9A%84%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/</id>
     <published>2021-07-08T04:44:32.000Z</published>
-    <updated>2021-07-26T04:05:22.394Z</updated>
+    <updated>2021-11-24T12:22:45.986Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="学习Markdown的所思所想"><a href="#学习Markdown的所思所想" class="headerlink" title="学习Markdown的所思所想"></a>学习Markdown的所思所想</h1><h2 id="一、我对Markdown的认识"><a href="#一、我对Markdown的认识" class="headerlink" title="一、我对Markdown的认识"></a>一、我对Markdown的认识</h2><p>使用Markdown易于编写以文本格式的文章，以人们喜闻乐见的方式表达出来，具有条理性；对于Markdown一些快捷键比如创建标题级数只使用即可，还有加粗，斜体，代码块等等，对于写文章而言，比以前使用的Word有着事半功倍的效果。我认为Markdown语言使用思路清晰，掌握其基本的写作思路便可写出一篇条理清晰的文章</p><h2 id="二、Markdown的使用方法"><a href="#二、Markdown的使用方法" class="headerlink" title="二、Markdown的使用方法"></a>二、Markdown的使用方法</h2><p>字体：* <em>标示斜体，</em>* **标示粗体,~~ 删除文本~~。<br>段落：# 标示一级标题、## 标示二级标题、如此增加到六级标题，&gt; 标示段落引用，- 标示无序列表等等；</p><p>图片:！[图片名称]（图片地址）——<em>这里的图片地址从百度图床中获取</em></p><p><img src="https://www.hualigs.cn/image/60fe31ed1f0e3.jpg" alt="最美桂电"></p><p>连接：[链接注释]（链接地址）例如：<a href="https://www.erke.com/">官网在这-大家理性消费</a></p><p>表格:</p><table><thead><tr><th align="center">姓名</th><th align="center">年龄</th><th align="center">成绩</th></tr></thead><tbody><tr><td align="center">张三</td><td align="center">19</td><td align="center">111</td></tr><tr><td align="center">李四</td><td align="center">20</td><td align="center">222</td></tr><tr><td align="center">我</td><td align="center">19</td><td align="center">333</td></tr></tbody></table><h2 id="三、对使用Markdown中的不足"><a href="#三、对使用Markdown中的不足" class="headerlink" title="三、对使用Markdown中的不足"></a>三、对使用Markdown中的不足</h2><p>对于Markdown的使用并非一朝一夕就可熟练上手，想要学好并熟练应用Markdown语言，应该多写文章，多应用，他没有复杂的逻辑关系，它是一种格式的表达形式，应用这中语言可以让文章有理有据，结构框架一目了然。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="学习Markdown的所思所想"><a href="#学习Markdown的所思所想" class="headerlink" title="学习Markdown的所思所想"></a>学习Markdown的所思所想</h1><h2 id="一、我对Markdown的认识"><a href="#一、我对Markdown的认识" class="headerlink" title="一、我对Markdown的认识"></a>一、我对Markdown的认识</h2><p>使用Markdown易于编写以文本格式的文章，以人们喜闻乐见的方式表达出来，具有条理性；对于Markdown一些快捷键比如创建标题级数只使用即可，还有加粗，斜体，代码块等等，对于写文章而言，比以前使用的Word有着事半功倍的效果。我认为Markdown语言使用思路清晰，掌握其基本的写作思路便可写出一篇条理清晰的文章</p><h2 id="二、Markdown的使用方法"><a href="#二、Markdown的使用方法" class="headerlink" title="二、Markdown的使用方法"></a>二、Markdown的使用方法</h2><p>字体：* <em>标示斜体，</em>* **标示粗体,~~ 删除文本~~。<br>段落：# 标示一级标题、## 标示二级标题、如此增加到六级标题，&gt; 标示段落引用，- 标示无序列表等等；</p><p>图片:！[图片名称]（图片地址）——<em>这里的图片地址从百度图床中获取</em></p><p><img src="https://www.hualigs.cn/image/60fe31ed1f0e3.jpg" alt="最美桂电"></p><p>连接：[链接注释]（链接地址）例如：<a href="https://www.erke.com/">官网在这-大家理性消费</a></p><p>表格:</p><table><thead><tr><th align="center">姓名</th><th align="center">年龄</th><th align="center">成绩</th></tr></thead><tbody><tr><td align="center">张三</td><td align="center">19</td><td align="center">111</td></tr><tr><td align="center">李四</td><td align="center">20</td><td align="center">222</td></tr><tr><td align="center">我</td><td align="center">19</td><td align="center">333</td></tr></tbody></table><h2 id="三、对使用Markdown中的不足"><a href="#三、对使用Markdown中的不足" class="headerlink" title="三、对使用Markdown中的不足"></a>三、对使用Markdown中的不足</h2><p>对于Markdown的使用并非一朝一夕就可熟练上手，想要学好并熟练应用Markdown语言，应该多写文章，多应用，他没有复杂的逻辑关系，它是一种格式的表达形式，应用这中语言可以让文章有理有据，结构框架一目了然。</p><p>创建新的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章题目&quot;</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
