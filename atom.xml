@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-12T18:08:35.950Z</updated>
+  <updated>2021-11-24T12:09:31.644Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/2021/08/20/%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F/"/>
+    <id>http://example.com/2021/08/20/%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F/</id>
+    <published>2021-08-20T07:37:29.442Z</published>
+    <updated>2021-11-24T12:09:31.644Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="成员变量和局部变量"><a href="#成员变量和局部变量" class="headerlink" title="成员变量和局部变量"></a>成员变量和局部变量</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Eval</span></span>&#123;<span class="comment">//定义类，名称一致</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">double</span> PI=<span class="number">3.14</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> age=<span class="number">23</span>;<span class="comment">//定义静态 变量</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;<span class="comment">//定义主方法  </span></span><br><span class="line"><span class="keyword">final</span> <span class="keyword">int</span> number;<span class="comment">//定义常量注意常量只能赋值一次</span></span><br><span class="line">number=<span class="number">12345</span>;</span><br><span class="line">age=<span class="number">22</span>;</span><br><span class="line">System.out.println(+PI);</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">​System.out.println(+number);</span><br><span class="line">​System.out.println(+age);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Frist</span></span>&#123;<span class="comment">//注意大小写！！！！</span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> times=<span class="number">3</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> times=<span class="number">4</span>;</span><br><span class="line">System.out.println(+times);</span><br><span class="line">&#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//局部变量会覆盖全局变量</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;成员变量和局部变量&quot;&gt;&lt;a href=&quot;#成员变量和局部变量&quot; class=&quot;headerlink&quot; title=&quot;成员变量和局部变量&quot;&gt;&lt;/a&gt;成员变量和局部变量&lt;/h1&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title></title>
