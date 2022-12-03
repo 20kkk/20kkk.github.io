@@ -6,13 +6,35 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+  <meta name="description" content="一、 实验目的 1、熟练Wireshark的使用； 2、分析TCP三次握手的工作原理；分析UDP协议； 3、研究Ping操作与ARP协议的关系； 4、分析DHCP与DNS协议的工作原理。 二、 实验原理 1、UDP协议 UDP协议在IP协议上增加了复用、分用和差错检测功能。UDP的特点：  无连接的。相比于TCP协议，UDP协议在传送数据前不需要建立连接，当然也就没有释放连接。尽最大努力交付的。也">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%B8%89/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、 实验目的 1、熟练Wireshark的使用； 2、分析TCP三次握手的工作原理；分析UDP协议； 3、研究Ping操作与ARP协议的关系； 4、分析DHCP与DNS协议的工作原理。 二、 实验原理 1、UDP协议 UDP协议在IP协议上增加了复用、分用和差错检测功能。UDP的特点：  无连接的。相比于TCP协议，UDP协议在传送数据前不需要建立连接，当然也就没有释放连接。尽最大努力交付的。也">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps1.png">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps2.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps3.png">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps4.png">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps5.png">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps6.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps7.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps8.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps9.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps10.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps11.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps12.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps13.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps14.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps15.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps16.jpg">
+<meta property="og:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps17.jpg">
+<meta property="article:published_time" content="2022-12-03T12:56:33.127Z">
+<meta property="article:modified_time" content="2022-12-03T12:57:23.318Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/lenovo/AppData/Local/Temp/ksohtml24872/wps1.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +91,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-实验三" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-实验三" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%B8%89/" class="article-date">
   <time class="dt-published" datetime="2022-12-03T12:56:33.127Z" itemprop="datePublished">2022-12-03</time>
@@ -230,223 +250,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-实验二" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%BA%8C/" class="article-date">
-  <time class="dt-published" datetime="2022-12-03T12:55:34.521Z" itemprop="datePublished">2022-12-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一、 <strong>实验目的</strong></p>
-<p>1、了解和认识常见的网络设备及其功能；</p>
-<p>2、了解双绞线的制作过程；</p>
-<p>3、掌握简单局域网的搭建；</p>
-<p>4、掌握一些常见命令的使用；命令的含义和相关的操作。</p>
-<p>二、 <strong>实验原理</strong></p>
-<p>学习Windows语言，利用它来查看网络连接的情况，查看计算机的ip地址，子网掩码，dns配置等。</p>
-<p>三、 <strong>使用仪器，材料</strong></p>
-<p>1、计算机；2、交换网络环境（交换机）。</p>
-<p>四、 <strong>实验内容与步骤</strong></p>
-<p><strong>第一步：在控制面板的程序中，启用和关闭Windows功能中开启FTP服务器和Web管理工具</strong></p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps1.jpg" alt="img"> </p>
-<p>第二步：在iis里面创建FTP站点</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps2.jpg" alt="img"> </p>
-<p>第三步：创建完FTP站点之后，我们就可以利用自己的FTP地址来访问本地文件夹，网址为自己的IP地址</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps3.jpg" alt="img"> </p>
-<p>第四步：搭建web服务器，打开网页，展示之前创建的html文件中的内容</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps4.jpg" alt="img"> </p>
-<p>第五步：这里FTP和Web服务配置完成</p>
-<p>在机房电脑登入自己的FTP服务器</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps5.jpg" alt="img"> </p>
-<p>第六步：连接我的FTP服务器</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps6.jpg" alt="img"> </p>
-<p>第七步：观察这里的TCP进程</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps7.jpg" alt="img"> </p>
-<p>（1）步骤2中FTP客户以及FTP服务器之间建立了几条TCP连接？每条连接中双方的IP地址、TCP端口号和初始序号分别是多少？</p>
-<p>步骤二中建立了 13条连接，每条连接中的ip地址为10.33.74.218和172.16.87.56</p>
-<p>端口号为：20、21、50314、50306；初始序列号为：0</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml27928\wps8.jpg" alt="img"> </p>
-<p>（2）实验中哪些类型的TCP报文段首部中携带有MSS的选项信息</p>
-<p>由捕获的数据可知syn&#x2F;和syn&#x2F;ack类型的tcp报文段首部携带有MSS的选型信息</p>
-<p>（2）步骤2和步骤3的FTP会话交互有哪些不同？解释产生这些差异的原因。</p>
-<p>步骤2和步骤3的结果可以得到，在web服务器中使用浏览器会有额外的连接，从而会产生差异性</p>
+  
+    <a href="/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%BA%8C/" data-id="clb7xwwkb0001m8tw58dobuum" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-实验一" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%B8%80/" class="article-date">
-  <time class="dt-published" datetime="2022-12-03T12:54:10.333Z" itemprop="datePublished">2022-12-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>一、 <strong>实验目的</strong></p>
-<p>1、了解和认识常见的网络设备及其功能；</p>
-<p>2、了解双绞线的制作过程；</p>
-<p>3、掌握简单局域网的搭建；</p>
-<p>4、掌握一些常见命令的使用；命令的含义和相关的操作。</p>
-<p>二、 <strong>实验原理</strong></p>
-<p>学习Windows语言，利用它来查看网络连接的情况，查看计算机的ip地址，子网掩码，dns配置等。</p>
-<p>三、 <strong>使用仪器，材料</strong></p>
-<p>1、计算机；2、交换网络环境（交换机）。</p>
-<p>四、 <strong>实验内容与步骤</strong></p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps1.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps2.jpg" alt="img"> </p>
-<p>Ping 172.16.87.17</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps3.jpg" alt="img"> </p>
-<p>10.0.1.5</p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps4.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps5.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps6.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps7.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps8.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps9.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps10.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps11.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps12.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps13.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps14.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps15.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps16.jpg" alt="img"> </p>
-<p><img src="file:///C:\Users\lenovo\AppData\Local\Temp\ksohtml21804\wps17.jpg" alt="img"> </p>
-<p>网络回路就是网络中存在环，当连接两台交换机的时候使用一条线相连，便可以达到级联的效果，当使用两条线连接的时候就会出现网络回路的现象，出现网络回路的现象会使信息无终止的传输，使得整个网络瘫痪。解决办法：启用对应端口的环回监测受控功能，该交换端口才会自动与其他交换端口隔离开来，那样一来对应端口的网络环路现象才不会影响到其他交换端口的工作状态。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/03/%E5%AE%9E%E9%AA%8C%E4%B8%80/" data-id="clb7xwwk60000m8tw2ivl6k11" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-博客复活日记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB%E6%97%A5%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2022-11-25T10:28:03.000Z" itemprop="datePublished">2022-11-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB%E6%97%A5%E8%AE%B0/">博客复活日记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>d</p>
-<p>大一建的博客终于复活了</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/25/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB%E6%97%A5%E8%AE%B0/" data-id="clawfff8h0001cktw9ce022lk" data-title="博客复活日记" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/12/" rel="tag">12</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/11/25/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-11-25T09:17:15.483Z" itemprop="datePublished">2022-11-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/11/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/11/25/hello-world/" data-id="clawfff880000cktw1yha82ol" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
